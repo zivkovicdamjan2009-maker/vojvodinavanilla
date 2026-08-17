@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wedding Centar Vanilla — svadbe, Stara Pazova</title>
+<meta name="description" content="Wedding Centar Vanilla, Stara Pazova — sala za svadbe za do 550 gostiju, venčanje na otvorenom, wedding planner i sobe za noćenje. Kamenjareva 38, Stara Pazova.">
+<link rel="canonical" href="https://vojvodinavanilla.com/">
+<meta property="og:title" content="Wedding Centar Vanilla — Dan koji se pamti ceo život">
+<meta property="og:description" content="Ceremonija, proslava i smeštaj za do 550 gostiju — na jednom mestu. Stara Pazova, 30 minuta od Beograda i Novog Sada.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:image" content="https://vojvodinavanilla.com/slike/hero-sala.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wedding Centar Vanilla — Stara Pazova">
+<meta name="twitter:description" content="Sala za svadbe do 550 mesta, venčanje na otvorenom, smeštaj na licu mesta.">
+<meta name="twitter:image" content="https://vojvodinavanilla.com/slike/hero-sala.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":["EventVenue","LocalBusiness"],"name":"Wedding Centar Vanilla","description":"Wedding centar i sala za svadbe u Staroj Pazovi — ceremonija na otvorenom, proslava do 550 gostiju i sobe za noćenje.","telephone":"+381 61 11 999 99","maximumAttendeeCapacity":550,"priceRange":"$$","image":"https://vojvodinavanilla.com/slike/hero-sala.jpg","url":"https://vojvodinavanilla.com/","address":{"@type":"PostalAddress","streetAddress":"Kamenjareva 38","addressLocality":"Stara Pazova","postalCode":"22300","addressRegion":"Srem","addressCountry":"RS"},"geo":{"@type":"GeoCoordinates","latitude":44.9797,"longitude":20.1614},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday"],"opens":"10:00","closes":"16:00"}]}
+]}
+</script>
+</head>
+<body>
+
+<!-- PRELOADER: zavesa se podiže naviše, ukupno ~1.2s -->
+<div class="pre" id="pre"><span>Vanilla</span></div>
+
+<!-- STICKY HEADER -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#top">Vanilla</a>
+    <nav class="navlinks">
+      <a href="#prostor">Prostor</a>
+      <a href="#ponuda">Ponuda</a>
+      <a href="#galerija">Galerija</a>
+      <a href="#utisci">Utisci</a>
+      <a href="hotel.html">Hotel</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="hdr-right">
+      <a class="tel-btn" href="tel:+381611199999">061 11 999 99</a>
+      <button class="burger" type="button" aria-label="Meni" aria-expanded="false" id="burger">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- FULLSCREEN MOBILNI MENI -->
+<div class="mmenu" id="mmenu" hidden>
+  <button class="mclose" type="button" aria-label="Zatvori meni" id="mclose">&times;</button>
+  <a href="#prostor">Prostor</a>
+  <a href="#ponuda">Ponuda</a>
+  <a href="#galerija">Galerija</a>
+  <a href="#utisci">Utisci</a>
+  <a href="hotel.html">Hotel</a>
+  <a href="#kontakt">Kontakt</a>
+  <a class="mtel" href="tel:+381611199999">061 11 999 99</a>
+</div>
+
+<main>
+
+<!-- HERO — klijent ovde ubacuje video prostora u zlatnom satu:
+     <video class="hero-bg" autoplay muted loop playsinline poster="slike/hero.jpg"><source src="video/hero.mp4" type="video/mp4"></video>
+     Video max 3MB, obavezno poster slika. Za sada je slika-placeholder. -->
+<section class="hero" id="top">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-veil"></div>
+  <div class="hero-in">
+    <p class="eyebrow gold">Wedding centar &middot; Stara Pazova</p>
+    <h1>Dan koji se pamti ceo život</h1>
+    <p class="hero-sub">Ceremonija, proslava i smeštaj za do 550 gostiju — na jednom mestu.</p>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="#kontakt">Proveri slobodne termine</a>
+      <a class="btn btn-outline" href="#prostor">Pogledaj prostor</a>
+    </div>
+  </div>
+  <a class="scroll-ind" href="#prica" aria-label="Skroluj dalje"><span></span></a>
+</section>
+
+<!-- INTRO / PRIČA -->
+<section class="sec" id="prica" data-reveal>
+  <div class="wrap">
+    <div class="split">
+      <!-- FOTO: prava fotografija bašte / prostora u zlatnom satu (1200x1400) -->
+      <img class="img-story" src="slike/prica-sala-zvezdano-nebo.jpg" alt="Postavljen sto u velikoj sali wedding centra Vanilla u Staroj Pazovi ispod zvezdanog plafona" loading="lazy" width="1536" height="2048">
+      <div>
+        <p class="eyebrow gold">Naša priča</p>
+        <h2>Jedno mesto, ceo dan vaš</h2>
+        <p class="lede">Kada se zavetujete pod otvorenim nebom, gosti ne moraju nigde da idu — sto je već postavljen, muzika čeka, soba je spremna. Vanilla je sala za svadbe u Staroj Pazovi koja se pamti po tišini pre ulaska mlade i po tome što ništa nije bilo na brzinu.</p>
+        <div class="stats">
+          <div><p class="stat-n">550</p><p class="stat-l">Mesta</p></div>
+          <div><p class="stat-n">20+</p><p class="stat-l">Godina</p></div>
+          <div><p class="stat-n">Čin</p><p class="stat-l">Na otvorenom</p></div>
+          <div><p class="stat-n">Sobe</p><p class="stat-l">Na licu mesta</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROSTORI — tamna sekcija -->
+<section class="sec dark" id="prostor" data-reveal>
+  <div class="wrap">
+    <p class="eyebrow gold">Prostori</p>
+    <h2 class="h2-narrow">Sala, kamerni salon i sobe pod istim krovom</h2>
+    <div class="grid3">
+      <article class="space">
+        <!-- FOTO: velika sala postavljena za svadbu -->
+        <img src="slike/velika-sala.jpg" alt="Velika sala wedding centra Vanilla sa plesnim podijumom, postavljena za svadbu do 550 gostiju" loading="lazy" width="1200" height="1600">
+        <h3>Velika sala</h3>
+        <p class="cap gold">Do 550 mesta</p>
+        <p class="body-s">Prostran plesni podijum u centru, stolovi po obodu — svi vide prvi ples.</p>
+        <a class="thin-link" href="#kontakt">Detaljnije —</a>
+      </article>
+      <article class="space">
+        <!-- FOTO: manja sala / kamerni deo -->
+        <img src="slike/manja-sala.jpg" alt="Manja sala wedding centra Vanilla postavljena za kamerniju proslavu" loading="lazy" width="1200" height="1600">
+        <h3>Kamerna sala</h3>
+        <p class="cap gold">Do 120 mesta</p>
+        <p class="body-s">Za krštenja, rođendane i godišnjice — isti tim, manji i tiši prostor.</p>
+        <a class="thin-link" href="#kontakt">Detaljnije —</a>
+      </article>
+      <article class="space">
+        <!-- FOTO: soba za goste -->
+        <img src="slike/soba.jpg" alt="Soba za noćenje gostiju u wedding centru Vanilla, Stara Pazova" loading="lazy" width="1200" height="1600">
+        <h3>Sobe za goste</h3>
+        <p class="cap gold">Noćenje na licu mesta</p>
+        <p class="body-s">Gosti iz Beograda i Novog Sada ostaju do jutra — bez vožnje i seljakanja.</p>
+        <a class="thin-link" href="hotel.html">Detaljnije —</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PONUDA -->
+<section class="sec" id="ponuda" data-reveal>
+  <div class="wrap">
+    <p class="eyebrow gold">Ponuda</p>
+    <h2 class="h2-narrow">Sve što dan zahteva, i ništa više</h2>
+    <div class="grid3 offer">
+      <div class="offer-i">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1" aria-hidden="true"><path d="M12 21s-7-4.6-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.4-7 10-7 10z"/></svg>
+        <h3>Svadbe</h3>
+        <p class="body-s">Od dolaska svatova do poslednje pesme — jedan tim vodi ceo dan.</p>
+      </div>
+      <div class="offer-i">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1" aria-hidden="true"><path d="M3 20h18M6 20V9l6-5 6 5v11M10 20v-6h4v6"/></svg>
+        <h3>Ceremonija na otvorenom</h3>
+        <p class="body-s">Zvanični čin venčanja u bašti, sa stolicama, prolazom i tišinom.</p>
+      </div>
+      <div class="offer-i">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1" aria-hidden="true"><path d="M4 19V6m0 0 8 3 8-3v13M9 21V9"/></svg>
+        <h3>Wedding planner</h3>
+        <p class="body-s">Naš planer drži raspored, dogovore i sitnice koje se lako zaborave.</p>
+      </div>
+      <div class="offer-i">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1" aria-hidden="true"><path d="M5 3v8a3 3 0 0 0 6 0V3M8 11v10M18 3c-1.5 2-2 3.5-2 5s.5 2.5 2 3v10"/></svg>
+        <h3>Gastronomija i meniji</h3>
+        <p class="body-s">Meni se sastavlja s vama i proba pre potpisa — bez iznenađenja.</p>
+      </div>
+      <div class="offer-i">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1" aria-hidden="true"><path d="M12 3v18M4 8c4 0 8 2 8 6M20 8c-4 0-8 2-8 6"/></svg>
+        <h3>Dekoracija</h3>
+        <p class="body-s">Cvetni aranžmani i rasveta usklađeni sa paletom vašeg dana.</p>
+      </div>
+      <div class="offer-i">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1" aria-hidden="true"><path d="M4 10h16v10H4zM4 10l8-6 8 6M9 20v-5h6v5"/></svg>
+        <h3>Krštenja i rođendani</h3>
+        <p class="body-s">Manje proslave, mature i godišnjice u kamernijem delu prostora.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIJA — masonry + lightbox. Klijent zamenjuje svaku sliku pravom fotografijom iz prostora. -->
+<section class="sec" id="galerija" data-reveal>
+  <div class="wrap">
+    <p class="eyebrow gold">Galerija</p>
+    <h2>Kako Vanilla izgleda uživo</h2>
+    <div class="gal" id="gal">
+      <figure><img src="slike/g-mladenacki-sto.jpg" alt="Mladenački sto sa belim cvećem u velikoj sali wedding centra Vanilla" loading="lazy"></figure>
+      <figure><img src="slike/g-crvene-ruze.jpg" alt="Velika sala postavljena sa crvenim ružama i plesnim podijumom" loading="lazy"></figure>
+      <figure><img src="slike/g-soba.jpg" alt="Soba za noćenje gostiju u wedding centru Vanilla" loading="lazy"></figure>
+      <figure><img src="slike/g-bele-ruze.jpg" alt="Velika sala sa aranžmanima belih ruža i okruglim stolovima" loading="lazy"></figure>
+      <figure><img src="slike/g-kamerna.jpg" alt="Kamerna sala postavljena za manju proslavu" loading="lazy"></figure>
+      <figure><img src="slike/g-kupatilo.jpg" alt="Kupatilo sa tuš kabinom u sobi za goste" loading="lazy"></figure>
+      <figure><img src="slike/g-mladenacki-beli.jpg" alt="Mladenački sto u velikoj sali ispod zvezdanog plafona" loading="lazy"></figure>
+      <figure><img src="slike/g-restoran.jpg" alt="Restoran za svečane ručkove i manje proslave" loading="lazy"></figure>
+      <figure><img src="slike/g-soba-detalj.jpg" alt="Detalj sobe za goste — mini bar i televizor" loading="lazy"></figure>
+      <figure><img src="slike/g-vanilla-zid.jpg" alt="Zlatni Vanilla natpis na osvetljenom zidu velike sale" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- KAKO DO REZERVACIJE -->
+<section class="sec tint" data-reveal>
+  <div class="wrap">
+    <p class="eyebrow gold">Kako do rezervacije</p>
+    <h2>Tri koraka, bez pritiska</h2>
+    <div class="grid3 steps">
+      <div class="step">
+        <p class="step-n">01</p>
+        <h3>Pozovite nas</h3>
+        <p class="body-s">Jedan poziv i datum i broj gostiju su dovoljni — odmah znate da li je termin slobodan.</p>
+      </div>
+      <div class="step">
+        <p class="step-n">02</p>
+        <h3>Obilazak i degustacija</h3>
+        <p class="body-s">Prođete kroz salu i baštu, probate meni i dogovorite detalje.</p>
+      </div>
+      <div class="step">
+        <p class="step-n">03</p>
+        <h3>Rezervacija termina</h3>
+        <p class="body-s">Termin je vaš kada se potpiše ugovor — sve ostalo radimo mi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UTISCI -->
+<section class="sec" id="utisci" data-reveal>
+  <div class="wrap-narrow">
+    <p class="eyebrow gold">Utisci gostiju</p>
+    <p class="quote-mark">&ldquo;</p>
+    <div class="t-view">
+      <div class="t-track" id="tTrack">
+        <blockquote>
+          <p>Ceremoniju smo imali u bašti, a gosti su ostali do jutra u sobama. Nijednog trenutka nismo morali da mislimo na organizaciju.</p>
+          <footer>Milica i Nemanja &middot; jun 2025.</footer>
+        </blockquote>
+        <blockquote>
+          <p>Nas je bilo 470 i sala je delovala mirno, ne prepuno. Podijum je bio pun do poslednje pesme.</p>
+          <footer>Jovana i Stefan &middot; septembar 2025.</footer>
+        </blockquote>
+        <blockquote>
+          <p>Degustacija menija je promenila sve — tačno smo znali šta dobijamo. Mama je bila mirnija od nas.</p>
+          <footer>Ana i Marko &middot; maj 2024.</footer>
+        </blockquote>
+        <blockquote>
+          <p>Gosti iz Novog Sada i Beograda su stigli za pola sata, parking je primio sve automobile bez nerviranja.</p>
+          <footer>Tijana i Luka &middot; avgust 2025.</footer>
+        </blockquote>
+      </div>
+    </div>
+    <div class="t-nav">
+      <button type="button" class="rnd" aria-label="Prethodna recenzija" id="tPrev">&larr;</button>
+      <button type="button" class="rnd" aria-label="Sledeća recenzija" id="tNext">&rarr;</button>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT — tamna sekcija -->
+<section class="sec dark" id="kontakt" data-reveal>
+  <div class="wrap">
+    <div class="split2">
+      <div>
+        <p class="eyebrow gold">Upit</p>
+        <h2 class="h2-narrow">Proverite da li je vaš datum slobodan</h2>
+        <!-- POZIV: sve vodi na telefon — bez forme i bez email upita -->
+        <p class="call-lede">Termini se dogovaraju telefonom. Pozovite nas, recite datum i okvirni broj gostiju — odmah znate da li je slobodno.</p>
+        <a class="call-num" href="tel:+381611199999">061 11 999 99</a>
+        <div class="call-row">
+          <a class="btn btn-solid" href="tel:+381611199999">Pozovite odmah</a>
+          <a class="btn btn-outline" href="https://wa.me/381611199999">WhatsApp poruka</a>
+        </div>
+        <p class="call-note">Pon–pet 09–19h &middot; Subota 10–16h. Ako ne stignemo da se javimo, ostavite poruku — uzvraćamo poziv čim budemo u prilici.</p>
+
+      </div>
+      <div class="contact-col">
+        <div class="c-item">
+          <p class="cap gold">Adresa</p>
+          <p class="c-val">Kamenjareva 38, Stara Pazova</p>
+        </div>
+        <div class="c-item">
+          <p class="cap gold">Telefon</p>
+          <a class="c-val c-link" href="tel:+381611199999">061 11 999 99</a>
+        </div>
+        <div class="c-item">
+          <p class="cap gold">Radno vreme</p>
+          <p class="c-val">Pon–pet 09–19h &middot; Subota 10–16h</p>
+        </div>
+        <div class="socials">
+          <!-- SOCIAL: zameniti pravim linkovima profila -->
+          <a href="https://instagram.com" aria-label="Instagram" class="rnd-dark">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.8" fill="#C9A961"/></svg>
+          </a>
+          <a href="https://facebook.com" aria-label="Facebook" class="rnd-dark">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A961" stroke-width="1.2" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V9a1 1 0 0 1 1-1z"/></svg>
+          </a>
+        </div>
+        <!-- MAPA: Google embed u punim bojama — zameniti "place" embed linkom sa tačnim pinom -->
+        <iframe title="Lokacija Wedding Centar Vanilla, Kamenjareva 38, Stara Pazova" src="https://www.google.com/maps?q=Kamenjareva+38,+Stara+Pazova,+Srbija&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+        <a class="thin-link" href="https://www.google.com/maps/search/?api=1&amp;query=Kamenjareva+38,+Stara+Pazova" target="_blank" rel="noopener">Otvori u Google mapama —</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="ftr">
+  <div class="wrap ftr-in">
+    <span class="brand-ftr">Vanilla</span>
+    <nav class="ftr-nav">
+      <a href="#prostor">Prostor</a>
+      <a href="#ponuda">Ponuda</a>
+      <a href="#galerija">Galerija</a>
+      <a href="hotel.html">Hotel Vojvodina</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="ftr-social">
+      <a href="https://instagram.com" aria-label="Instagram" class="rnd-light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.8" fill="currentColor"/></svg></a>
+      <a href="https://facebook.com" aria-label="Facebook" class="rnd-light"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V9a1 1 0 0 1 1-1z"/></svg></a>
+    </div>
+    <span class="copy">&copy; 2026 Wedding Centar Vanilla &middot; Sva prava zadržana</span>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" hidden>
+  <button type="button" class="lb-close" aria-label="Zatvori" id="lbClose">&times;</button>
+  <img id="lbImg" alt="Uvećana fotografija iz galerije">
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
